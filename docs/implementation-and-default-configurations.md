@@ -41,12 +41,16 @@ The 300-token configuration achieves the highest retrieval coverage and is there
 
 After embedding all chunks, GenLoc retrieves the top-ranked candidate files for each bug report. Using the Ye et al. dataset, we analyze how retrieval coverage changes as the number of retrieved candidates increases from 1 to 100.
 
-We observe steep gains in the early stages (e.g., 1 → 10 → 20), followed by diminishing returns beyond the top-50 candidates. Increasing the retrieval window from 50 to 100 candidates yields only a **4.26% increase in retrieval coverage**, while substantially increasing noise and computational overhead.
+We observe steep gains in the early stages (e.g., 1 → 10 → 20), followed by diminishing returns beyond the top-50 candidates. Increasing the retrieval window from 50 to 100 candidates (i.e., doubling the number of retrieved files) yields only a **4.26% increase in retrieval coverage**, while substantially increasing noise and computational overhead.
 
 Therefore, retrieving the **top 50 candidate files** is adopted as GenLoc’s default setting.
 
-**Figure:** Retrieval coverage for varying numbers of candidate files on the Ye et al. dataset.  
-![Retrieval coverage vs number of candidates](../img/candidates.png)
+<p align="center">
+  <img src="../img/candidates.png" width="450">
+</p>
+<p align="center">
+  <b>Figure:</b> Retrieval coverage for varying numbers of candidate files on the Ye et al. dataset.
+</p>
 
 
 ### Embedding Storage and Incremental Updates
