@@ -35,7 +35,7 @@ To evaluate the robustness of this choice, we conduct a **sensitivity analysis**
 
 The 300-token configuration achieves the highest retrieval coverage and is therefore adopted as GenLoc’s default chunk size.
 
-
+---
 
 ### Number of Retrieved Candidate Files
 
@@ -46,12 +46,13 @@ We observe steep gains in the early stages (e.g., 1 → 10 → 20), followed by 
 Therefore, retrieving the **top 50 candidate files** is adopted as GenLoc’s default setting.
 
 <p align="center">
-  <img src="../img/candidates.png" width="450">
+  <img src="../img/candidates.png" width="480">
 </p>
 <p align="center">
   <b>Figure:</b> Retrieval coverage for varying numbers of candidate files on the Ye et al. dataset.
 </p>
 
+---
 
 ### Embedding Storage and Incremental Updates
 
