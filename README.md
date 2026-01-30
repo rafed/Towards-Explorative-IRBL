@@ -7,6 +7,6 @@ This paper proposes GenLoc, a novel IRBL technique that combines semantic retrie
 * `output-files/`: Ranked list produced by GenLoc (for each trial).
 * `localized-bugs/`: Contains bugs correctly localized by GenLoc.
 * `dataset/`: Contains XML files and GitHub URLs of the projects used for bug localization.
-* `results/`: Contains the results of the experiments
-* `docs/`: Contains implementation details and time-cost analysis
+* `results/`: Contains the results of the experiments.
+* `docs/`: Contains implementation details and time-cost analysis.
 ---
